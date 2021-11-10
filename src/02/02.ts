@@ -10,7 +10,8 @@ type techType = {
   id: number
   title: string
 }
-type stydentType = {
+export type studentType = {
+  id: number
   name: string
   age: number
   isActive: boolean
@@ -18,7 +19,8 @@ type stydentType = {
   techologies: Array<techType>
 }
 
-export const student: stydentType = {
+export const student: studentType = {
+  id: 1,
   name: 'Ed',
   age: 25,
   isActive: true,
