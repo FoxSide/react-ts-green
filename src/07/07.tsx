@@ -19,12 +19,12 @@ type PropsType = {
   }
 }
 
-// function useState(m: string) {
-//   return [m, function (){}]
-// }
+function useEdState(m: string) {
+  return [m, function (){}]
+}
 
 export const ManComponent: React.FC<PropsType> = ({title, man, ...props}) => {
-  // const [message, setMessage] = useState('hello')
+  const [message, setMessage] = useEdState('hello')
   return <div>
   <h1>{title}</h1>
     <hr/>
